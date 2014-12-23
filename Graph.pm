@@ -9,11 +9,7 @@ use Class::Utils qw(set_params);
 use Error::Pure qw(err);
 use Graph;
 use List::MoreUtils qw(none);
-use Readonly;
 use Scalar::Util qw(blessed);
-
-# Constants.
-Readonly::Array our @OUTPUTS => qw(text png);
 
 # Version.
 our $VERSION = 0.01;
