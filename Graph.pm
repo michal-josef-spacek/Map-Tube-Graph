@@ -21,6 +21,20 @@ sub new {
 	# Create object.
 	my $self = bless {}, $class;
 
+	# Edge callback.
+	$self->{'callback_edge'} = sub {
+		my ($self, $node, $link) = @_;
+		$self->{'graph'}->add_edge($node->id, $link);
+		return;
+	};
+
+	# Vertex callback.
+	$self->{'callback_vertex'} = sub {
+		my ($self, $node) = @_;
+		$self->{'graph'}->add_vertex($node->id);
+		return;
+	};
+
 	# Graph object.
 	$self->{'graph'} = undef;
 
@@ -53,7 +67,7 @@ sub new {
 sub graph {
 	my $self = shift;
 	foreach my $node (values %{$self->{'tube'}->nodes}) {
-		$self->{'graph'}->add_vertex($node->id);
+		$self->{'callback_vertex'}->($node);
 	}
 	my @processed;
 	foreach my $node (values %{$self->{'tube'}->nodes}) {
@@ -64,7 +78,7 @@ sub graph {
 				($_->[0] eq $link && $_->[1] eq $node->id)
 				} @processed) {
 
-				$self->{'graph'}->add_edge($node->id, $link);
+				$self->{'callback_edge'}->($node, $link);
 				push @processed, [$node->id, $link];
 			}
 		}
