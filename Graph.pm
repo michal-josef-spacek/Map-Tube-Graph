@@ -67,7 +67,7 @@ sub new {
 sub graph {
 	my $self = shift;
 	foreach my $node (values %{$self->{'tube'}->nodes}) {
-		$self->{'callback_vertex'}->($node);
+		$self->{'callback_vertex'}->($self, $node);
 	}
 	my @processed;
 	foreach my $node (values %{$self->{'tube'}->nodes}) {
@@ -78,7 +78,7 @@ sub graph {
 				($_->[0] eq $link && $_->[1] eq $node->id)
 				} @processed) {
 
-				$self->{'callback_edge'}->($node, $link);
+				$self->{'callback_edge'}->($self, $node, $link);
 				push @processed, [$node->id, $link];
 			}
 		}
