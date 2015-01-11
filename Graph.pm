@@ -49,7 +49,7 @@ sub new {
 		err "Parameter 'tube' is required.";
 	}
 	if (! blessed($self->{'tube'})
-		|| ! $self->{'tube'}->does('Map::Tube')) {
+		|| ! $self->{'tube'}->DOES('Map::Tube')) {
 
 		err "Parameter 'tube' must be 'Map::Tube' object.";
 	}
