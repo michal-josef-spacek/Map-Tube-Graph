@@ -12,8 +12,12 @@ license 'bsd';
 license 'artistic_2';
 name 'Map-Tube-Graph';
 readme_from 'Graph.pm';
-requires 'Map::Tube' => '2.41';
-requires 'perl' => '5.8.0';
+requires 'Class::Utils' => 0.06;
+requires 'Error::Pure' => 0.22;
+requires 'Graph' => 0;
+requires 'List::MoreUtils' => 0;
+requires 'Scalar::Util' => 0;
+requires 'perl' => '5.6.0';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Map-Tube-Graph';
 resources 'homepage' => 'https://github.com/tupinek/Map-Tube-Graph';
