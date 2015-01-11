@@ -1,6 +1,7 @@
 0.03
  - Add tests for constructor.
  - Fix does() to UNIVERSAL::DOES().
+ - Fix test dependencies.
 
 0.02 2015-01-11T12:03:46+01:00
  - Add tests for constructor.
