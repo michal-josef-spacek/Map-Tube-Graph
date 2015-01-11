@@ -12,7 +12,7 @@ use List::MoreUtils qw(none);
 use Scalar::Util qw(blessed);
 
 # Version.
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 # Constructor.
 sub new {
@@ -243,6 +243,6 @@ L<http://skim.cz>
 
 =head1 VERSION
 
-0.02
+0.03
 
 =cut
