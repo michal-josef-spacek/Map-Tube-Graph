@@ -9,7 +9,7 @@ use Graph::Undirected;
 use Map::Tube::Prague;
 use Map::Tube::Graph;
 use Test::MockObject;
-use Test::More 'tests' => 10;
+use Test::More 'tests' => 11;
 use Test::NoWarnings;
 
 # Test.
@@ -71,3 +71,6 @@ $obj = Map::Tube::Graph->new(
 );
 isa_ok($obj, 'Map::Tube::Graph', 'Instance with explicit Graph object.');
 ok($obj->{'graph'}->is_undirected, 'Is undirected graph.');
+
+# Test.
+isa_ok($obj->graph, 'Graph', 'Test for callbacks.');
