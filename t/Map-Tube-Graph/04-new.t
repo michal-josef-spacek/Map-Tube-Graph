@@ -5,9 +5,11 @@ use warnings;
 # Modules.
 use English qw(-no_match_vars);
 use Error::Pure::Utils qw(clean);
+use Graph::Undirected;
 use Map::Tube::Prague;
 use Map::Tube::Graph;
-use Test::More 'tests' => 5;
+use Test::MockObject;
+use Test::More 'tests' => 10;
 use Test::NoWarnings;
 
 # Test.
@@ -36,7 +38,36 @@ is($EVAL_ERROR, "Parameter 'tube' is required.\n",
 clean();
 
 # Test.
+eval {
+	Map::Tube::Graph->new(
+		'tube' => 'foo',
+	);
+};
+is($EVAL_ERROR, "Parameter 'tube' must be 'Map::Tube' object.\n",
+	"Parameter 'tube' must be 'Map::Tube' object (string).");
+clean();
+
+# Test.
+eval {
+	Map::Tube::Graph->new(
+		'tube' => Test::MockObject->new,
+	);
+};
+is($EVAL_ERROR, "Parameter 'tube' must be 'Map::Tube' object.\n",
+	"Parameter 'tube' must be 'Map::Tube' object (Test::MockObject).");
+clean();
+
+# Test.
 my $obj = Map::Tube::Graph->new(
 	'tube' => Map::Tube::Prague->new,
 );
-isa_ok($obj, 'Map::Tube::Graph');
+isa_ok($obj, 'Map::Tube::Graph', 'Instance with implicit Graph object.');
+ok($obj->{'graph'}->is_directed, 'Is directed graph.');
+
+# Test.
+$obj = Map::Tube::Graph->new(
+	'graph' => Graph::Undirected->new,
+	'tube' => Map::Tube::Prague->new,
+);
+isa_ok($obj, 'Map::Tube::Graph', 'Instance with explicit Graph object.');
+ok($obj->{'graph'}->is_undirected, 'Is undirected graph.');
