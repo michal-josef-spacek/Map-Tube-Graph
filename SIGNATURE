@@ -1,0 +1,49 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.70.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 58474258de6f44e552b1ce2551087e2091d4e7b6 Changes
+SHA1 e0419c666a288f8122883b7ae73e3f2233264830 Graph.pm
+SHA1 882221895a73bad18eb9f16a0ce523a968a932c1 LICENSE.artistic_2
+SHA1 507a10efa92555ddddfbe72be27964d9e3eef80f LICENSE.bsd
+SHA1 c0010a6914cc1cfeb336ed4ed5a596eb0b1928f2 MANIFEST
+SHA1 8065121cd273f4ba8951b22c478ca1e0c50670dc META.yml
+SHA1 cf421f93f376f6a6ac2561dae754ca2d8895ceeb Makefile.PL
+SHA1 d4be2007b87ee5e4de6db2190f23f14aa4ff2e5a README
+SHA1 d3f5bf1c396029c5c6a2d9f287f5f564f848a2fe examples/ex1.pl
+SHA1 d2664c57b65686abbfbbe1e71229761625be4922 inc/Module/Install.pm
+SHA1 da41a8d9904f7b409b49a5f6c338d3eb305a2b4b inc/Module/Install/Base.pm
+SHA1 0db0afe19cd298abba248fa089e5525bd5ab3ab6 inc/Module/Install/Can.pm
+SHA1 e7152bfd5ca67d0e33f96d09c59d600bca5c1f15 inc/Module/Install/Fetch.pm
+SHA1 29ee1cb0dc262b00983e3a2f5cf00b538dff5069 inc/Module/Install/Makefile.pm
+SHA1 e963f80cfe255f16e55067d1feb6841cff3ed2fe inc/Module/Install/Metadata.pm
+SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.pm
+SHA1 65a1f09af1f4f9e47a98b6b45667c328b1b2f9c0 inc/Module/Install/Win32.pm
+SHA1 f191c49475b3f51775180cd4f7e41e3bdab7f85a inc/Module/Install/WriteAll.pm
+SHA1 8ccf98e069d7bee9b9099f916baeed9b32219396 t/Map-Tube-Graph/00-use.t
+SHA1 88a2a1ba08e685de64d4ed2d03cbd93548bff9e7 t/Map-Tube-Graph/01-version.t
+SHA1 4adabfdacc7d0e79dc138ec2005c0920fd5eeccb t/Map-Tube-Graph/02-pod_coverage.t
+SHA1 3bced6615b96b264b02bc9bb01e71d1332f7a5b4 t/Map-Tube-Graph/03-pod.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQEcBAEBAgAGBQJUslOmAAoJEJe+XXKaIuTlpFMIAKb2mhwvE9aloOE87iBRL5a7
+Uw4472zJGhZ903pgv5JazPeze1PdcqZKkJP+l63xi9M5MHX5NRnp8lajU84NCU+L
+VXotm+o51QjXqNuwd8OZdGyyraFy80LFhirqI+04rZ9jyYQzFFDNdmpOOv3lD9yh
+n/8Zx3aX/BDjIHAqXK3ZgaIyUlrBq/iWH5HwyW/2jo9SziQOx3uc0n5bzf8liJ4c
+rfmyv9UngPwGpebAnDKTFbp+3iSN625bBnz6H3U23ehVMeQzuwR8mkvmbDB4RVtz
+HHXfxxsDsh6PUZLdN72I+L18rAEXyfZksXveTtmWJHckr4ktII3jB6oFnWGOazE=
+=DQk2
+-----END PGP SIGNATURE-----
