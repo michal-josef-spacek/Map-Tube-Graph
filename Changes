@@ -1,4 +1,4 @@
-0.02
+0.02 2015-01-11T12:03:46+01:00
  - Add tests for constructor.
  - Fix dependencies.
  - Remove obsolete test requirement.
