@@ -3,7 +3,6 @@ abstract: 'Graph interface to the Map::Tube.'
 author:
   - 'Michal Spacek <skim@cpan.org>'
 build_requires:
-  Encode: 0
   English: 0
   ExtUtils::MakeMaker: 6.36
   File::Object: 0.08
