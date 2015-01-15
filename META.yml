@@ -41,4 +41,4 @@ resources:
   homepage: https://github.com/tupinek/Map-Tube-Graph
   license: http://opensource.org/licenses/artistic-license-2.0.php
   repository: git://github.com/tupinek/Map-Tube-Graph
-version: '0.03'
+version: '0.04'
