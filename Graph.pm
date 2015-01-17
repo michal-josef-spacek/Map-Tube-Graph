@@ -6,6 +6,7 @@ use warnings;
 
 # Modules.
 use Class::Utils qw(set_params);
+use English;
 use Error::Pure qw(err);
 use Graph;
 use List::MoreUtils qw(none);
@@ -47,6 +48,14 @@ sub new {
 	# Check Map::Tube object.
 	if (! defined $self->{'tube'}) {
 		err "Parameter 'tube' is required.";
+	}
+	if (! defined &UNIVERSAL::DOES) {
+		eval {
+			require UNIVERSAL::DOES;
+		};
+		if ($EVAL_ERROR) {
+			err 'Cannot load UNIVERSAL::DOES module.';
+		}
 	}
 	if (! blessed($self->{'tube'})
 		|| ! $self->{'tube'}->DOES('Map::Tube')) {
@@ -155,6 +164,7 @@ Map::Tube::Graph - Graph output for Map::Tube.
 =head1 ERRORS
 
  new():
+         Cannot load UNIVERSAL::DOES module.
          Parameter 'tube' is required.
          Parameter 'tube' must be 'Map::Tube' object.
          From Class::Utils::set_params():
@@ -213,10 +223,13 @@ Map::Tube::Graph - Graph output for Map::Tube.
 =head1 DEPENDENCIES
 
 L<Class::Utils>,
+L<English>,
 L<Error::Pure>,
 L<Graph>,
 L<List::MoreUtils>,
 L<Scalar::Util>.
+
+L<UNIVERSAL::DOES> if doesn't exists in Perl.
 
 =head1 SEE ALSO
 
