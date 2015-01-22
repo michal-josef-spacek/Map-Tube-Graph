@@ -109,7 +109,8 @@ DEPENDENCIES
     UNIVERSAL::DOES if doesn't exists in Perl.
 
 SEE ALSO
-    Map::Tube, Map::Tube::GraphViz, Map::Tube::Text::Table, Task::Map::Tube.
+    Map::Tube, Map::Tube::GraphViz, Map::Tube::Plugin::Graph,
+    Map::Tube::Text::Table, Task::Map::Tube.
 
 REPOSITORY
     <https://github.com/tupinek/Map-Tube-Graph>
