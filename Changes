@@ -1,5 +1,6 @@
 0.05
  - Add Map::Tube::Plugin::Graph to SEE ALSO section in doc.
+ - Update Module::Install to 1.16 version.
 
 0.04 2015-01-17T10:37:20+01:00
  - Fix usage of UNIVERSAL::DOES() in Perl older than 5.10.1.
