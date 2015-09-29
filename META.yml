@@ -32,7 +32,7 @@ no_index:
 requires:
   Class::Utils: 0.06
   Error::Pure: 0.22
-  Graph: 0
+  Graph: 0.9702
   List::MoreUtils: 0
   Scalar::Util: 0
   perl: 5.6.0

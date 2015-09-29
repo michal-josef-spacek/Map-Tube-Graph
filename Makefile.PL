@@ -15,7 +15,7 @@ name 'Map-Tube-Graph';
 readme_from 'Graph.pm';
 requires 'Class::Utils' => 0.06;
 requires 'Error::Pure' => 0.22;
-requires 'Graph' => 0;
+requires 'Graph' => 0.9702;
 requires 'List::MoreUtils' => 0;
 requires 'Scalar::Util' => 0;
 if ($PERL_VERSION lt v5.10.1) {
