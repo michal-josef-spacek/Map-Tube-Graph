@@ -1,4 +1,4 @@
-0.05
+0.05 2015-09-29T10:29:40+02:00
  - Add Map::Tube::Plugin::Graph to SEE ALSO section in doc.
  - Improve SEE ALSO section in doc.
  - Move author tests to xt/ directory.
