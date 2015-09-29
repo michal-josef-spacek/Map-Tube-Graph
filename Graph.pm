@@ -233,11 +233,29 @@ L<UNIVERSAL::DOES> if doesn't exists in Perl.
 
 =head1 SEE ALSO
 
-L<Map::Tube>,
-L<Map::Tube::GraphViz>,
-L<Map::Tube::Plugin::Graph>,
-L<Map::Tube::Text::Table>,
-L<Task::Map::Tube>.
+=over
+
+=item L<Map::Tube>
+
+Core library as Role (Moo) to process map data.
+
+=item L<Map::Tube::GraphViz>
+
+GraphViz output for Map::Tube.
+
+=item L<Map::Tube::Plugin::Graph>
+
+Graph plugin for Map::Tube.
+
+=item L<Map::Tube::Text::Table>
+
+Table output for Map::Tube.
+
+=item L<Task::Map::Tube>
+
+Install the Map::Tube modules.
+
+=back
 
 =head1 REPOSITORY
 

@@ -109,8 +109,20 @@ DEPENDENCIES
     UNIVERSAL::DOES if doesn't exists in Perl.
 
 SEE ALSO
-    Map::Tube, Map::Tube::GraphViz, Map::Tube::Plugin::Graph,
-    Map::Tube::Text::Table, Task::Map::Tube.
+    Map::Tube
+        Core library as Role (Moo) to process map data.
+
+    Map::Tube::GraphViz
+        GraphViz output for Map::Tube.
+
+    Map::Tube::Plugin::Graph
+        Graph plugin for Map::Tube.
+
+    Map::Tube::Text::Table
+        Table output for Map::Tube.
+
+    Task::Map::Tube
+        Install the Map::Tube modules.
 
 REPOSITORY
     <https://github.com/tupinek/Map-Tube-Graph>
