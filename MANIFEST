@@ -2,6 +2,8 @@ Changes
 examples/ex1.pl
 Graph.pm
 inc/Module/Install.pm
+inc/Module/Install/AuthorRequires.pm
+inc/Module/Install/AuthorTests.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
 inc/Module/Install/Fetch.pm
@@ -17,8 +19,8 @@ MANIFEST			This list of files
 META.yml
 README
 SIGNATURE
-t/Map-Tube-Graph/00-use.t
-t/Map-Tube-Graph/01-version.t
-t/Map-Tube-Graph/02-pod_coverage.t
-t/Map-Tube-Graph/03-pod.t
+t/Map-Tube-Graph/01-use.t
+t/Map-Tube-Graph/02-version.t
 t/Map-Tube-Graph/04-new.t
+xt/Map-Tube-Graph/01-pod_coverage.t
+xt/Map-Tube-Graph/02-pod.t

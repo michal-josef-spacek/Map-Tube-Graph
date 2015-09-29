@@ -1,6 +1,7 @@
 0.05
  - Add Map::Tube::Plugin::Graph to SEE ALSO section in doc.
  - Improve SEE ALSO section in doc.
+ - Move author tests to xt/ directory.
  - Update Graph dependency to 0.9702 version.
  - Update Module::Install to 1.16 version.
 
