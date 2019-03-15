@@ -1,10 +1,8 @@
 package Map::Tube::Graph;
 
-# Pragmas.
 use strict;
 use warnings;
 
-# Modules.
 use Class::Utils qw(set_params);
 use English;
 use Error::Pure qw(err);
@@ -12,7 +10,6 @@ use Graph;
 use List::MoreUtils qw(none);
 use Scalar::Util qw(blessed);
 
-# Version.
 our $VERSION = 0.06;
 
 # Constructor.
@@ -172,11 +169,9 @@ Map::Tube::Graph - Graph output for Map::Tube.
 
 =head1 EXAMPLE
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use English;
  use Error::Pure qw(err);
  use Map::Tube::Graph;

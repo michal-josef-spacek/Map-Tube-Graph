@@ -54,11 +54,9 @@ ERRORS
                      Unknown parameter '%s'.
 
 EXAMPLE
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use English;
      use Error::Pure qw(err);
      use Map::Tube::Graph;
