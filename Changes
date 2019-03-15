@@ -3,7 +3,7 @@
  - Fix Makefile.PL for new version of Perl and no default »use lib '.'«.
  - Update Module::Install to 1.19 version.
  - Update author name.
- - Update copyright years to 2017.
+ - Update copyright years to 2019.
 
 0.05 2015-09-29T10:29:40+02:00
  - Add Map::Tube::Plugin::Graph to SEE ALSO section in doc.
