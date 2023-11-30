@@ -28,9 +28,9 @@ if ($PERL_VERSION lt v5.10.1) {
 	requires 'UNIVERSAL::DOES' => 0;
 }
 requires 'perl' => '5.6.0';
-resources 'bugtracker' => 'https://github.com/tupinek/Map-Tube-Graph/issues';
-resources 'homepage' => 'https://github.com/tupinek/Map-Tube-Graph';
-resources 'repository' => 'git://github.com/tupinek/Map-Tube-Graph';
+resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Map-Tube-Graph/issues';
+resources 'homepage' => 'https://github.com/michal-josef-spacek/Map-Tube-Graph';
+resources 'repository' => 'git://github.com/michal-josef-spacek/Map-Tube-Graph';
 test_requires 'English' => 0;
 test_requires 'Error::Pure::Utils' => 0.22;
 test_requires 'Graph::Undirected' => 0;

@@ -254,7 +254,7 @@ Install the Map::Tube modules.
 
 =head1 REPOSITORY
 
-L<https://github.com/tupinek/Map-Tube-Graph>
+L<https://github.com/michal-josef-spacek/Map-Tube-Graph>
 
 =head1 AUTHOR
 

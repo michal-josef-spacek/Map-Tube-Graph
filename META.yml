@@ -35,8 +35,8 @@ requires:
   Scalar::Util: 0
   perl: 5.6.0
 resources:
-  bugtracker: https://github.com/tupinek/Map-Tube-Graph/issues
-  homepage: https://github.com/tupinek/Map-Tube-Graph
+  bugtracker: https://github.com/michal-josef-spacek/Map-Tube-Graph/issues
+  homepage: https://github.com/michal-josef-spacek/Map-Tube-Graph
   license: http://opensource.org/licenses/artistic-license-2.0.php
-  repository: git://github.com/tupinek/Map-Tube-Graph
+  repository: git://github.com/michal-josef-spacek/Map-Tube-Graph
 version: '0.06'
