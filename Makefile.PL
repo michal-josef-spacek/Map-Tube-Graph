@@ -28,8 +28,7 @@ if ($PERL_VERSION lt v5.10.1) {
 	requires 'UNIVERSAL::DOES' => 0;
 }
 requires 'perl' => '5.6.0';
-resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
-	'?Name=Map-Tube-Graph';
+resources 'bugtracker' => 'https://github.com/tupinek/Map-Tube-Graph/issues';
 resources 'homepage' => 'https://github.com/tupinek/Map-Tube-Graph';
 resources 'repository' => 'git://github.com/tupinek/Map-Tube-Graph';
 test_requires 'English' => 0;
