@@ -1,5 +1,4 @@
 0.06
- - Add travis file.
  - Fix Makefile.PL for new version of Perl and no default »use lib '.'«.
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Remove simple comments.
