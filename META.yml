@@ -39,4 +39,4 @@ resources:
   homepage: https://github.com/michal-josef-spacek/Map-Tube-Graph
   license: http://opensource.org/licenses/artistic-license-2.0.php
   repository: git://github.com/michal-josef-spacek/Map-Tube-Graph
-version: '0.06'
+version: '0.07'
