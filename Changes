@@ -2,7 +2,7 @@
  - Add travis file.
  - Fix Makefile.PL for new version of Perl and no default »use lib '.'«.
  - Remove simple comments.
- - Update Module::Install to 1.19 version.
+ - Update Module::Install to 1.21 version.
  - Update author name.
  - Update copyright years to 2020.
 
