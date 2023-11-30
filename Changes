@@ -3,6 +3,7 @@
  - Fix Makefile.PL for new version of Perl and no default »use lib '.'«.
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Remove simple comments.
+ - Rewrite from List::MoreUtils to List::Util.
  - Update Module::Install to 1.21 version.
  - Update author name.
  - Update copyright years.

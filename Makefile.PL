@@ -22,7 +22,7 @@ recursive_author_tests('xt');
 requires 'Class::Utils' => 0.06;
 requires 'Error::Pure' => 0.22;
 requires 'Graph' => 0.9702;
-requires 'List::MoreUtils' => 0;
+requires 'List::Util' => 1.33;
 requires 'Scalar::Util' => 0;
 if ($PERL_VERSION lt v5.10.1) {
 	requires 'UNIVERSAL::DOES' => 0;

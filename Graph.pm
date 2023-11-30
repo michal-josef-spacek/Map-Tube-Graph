@@ -7,7 +7,7 @@ use Class::Utils qw(set_params);
 use English;
 use Error::Pure qw(err);
 use Graph;
-use List::MoreUtils qw(none);
+use List::Util 1.33 qw(none);
 use Scalar::Util qw(blessed);
 
 our $VERSION = 0.06;
@@ -221,7 +221,7 @@ L<Class::Utils>,
 L<English>,
 L<Error::Pure>,
 L<Graph>,
-L<List::MoreUtils>,
+L<List::Util>,
 L<Scalar::Util>.
 
 L<UNIVERSAL::DOES> if doesn't exists in Perl.
